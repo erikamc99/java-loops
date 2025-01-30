@@ -5,10 +5,12 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class MultiplicationTableTest {
     @Test
+    @DisplayName("Test para generar la tabla de multiplicar del 5")
     void testGenTable() {
         MultiplicationTable table = new MultiplicationTable(5);
         List<String> result = table.genTable();

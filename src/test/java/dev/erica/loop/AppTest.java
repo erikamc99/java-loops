@@ -14,6 +14,7 @@ class AppTest {
     }
 
     @Test
+    @DisplayName ("Test al mostrar en consola la tabla de multiplicar del 5")
     void testMain() {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -40,10 +41,12 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class AppTest {
     @Test
+    @DisplayName ("Test al mostrar en consola la tabla de multiplicar del 5 con JUnit")
     void testApp() {
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
